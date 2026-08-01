@@ -1,0 +1,255 @@
+{
+	"version": "0.1",
+	"files": [
+		{
+			"type": "class",
+			"src": "classes/shop/shop.class.php",
+			"dest": "classes/shop/shop.class.php",
+			"digest": "sha256:5bde9cedfecfb447d83962679882f0fbefe36faf14608a7e7b045d0af355b33e"
+		},
+		{
+			"type": "class",
+			"src": "classes/shop/shop.core.class.php",
+			"dest": "classes/shop/shop.core.class.php",
+			"digest": "sha256:e69988385b185688653357a2426da55cef57974c1e4977dee02a80c6bd34c0e9"
+		},
+		{
+			"type": "class",
+			"src": "classes/shop/supershop.class.php",
+			"dest": "classes/shop/supershop.class.php",
+			"digest": "sha256:ad09e39e293f8a52cad6edf6e7623ee94e69b4a73eaba38ab8a0c0557d3a42c2"
+		},
+		{
+			"type": "class",
+			"src": "classes/shop/supershop.core.class.php",
+			"dest": "classes/shop/supershop.core.class.php",
+			"digest": "sha256:bf46b9bb3b168d4926ffb6766823d809b1cd49a4db7a2a7116b83126d99b305f"
+		},
+		{
+			"type": "settings-css",
+			"src": "www/settings/css/s-shop.css",
+			"dest": "www/janitor/css/setup/modules/s-shop.css",
+			"digest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+		},
+		{
+			"type": "settings-js",
+			"src": "www/settings/js/m-shop.js",
+			"dest": "www/janitor/js/setup/modules/m-shop.js",
+			"digest": "sha256:c8cfaa941d329842e749dd56c7d54bc54adbb5dd31ea44fd664c608cb771954b"
+		},
+		{
+			"type": "settings-template",
+			"src": "templates/settings/index.php",
+			"dest": "templates/janitor/modules/shop/simplest/index.php",
+			"digest": "sha256:7955b25fa3baf4e6ff52668e1f059ae7b69a34a9af01732f5c1c81b2d3bde927"
+		},
+		{
+			"type": "backend-controller",
+			"src": "www/janitor/shop.php",
+			"dest": "www/janitor/shop.php",
+			"digest": "sha256:06691e29029aedf2ee6e74ac2596f75e0d04d4b07ceeaca656e5ffd952284752"
+		},
+		{
+			"type": "backend-template",
+			"src": "templates/janitor/profile/orders/creditnote.php",
+			"dest": "templates/janitor/profile/orders/creditnote.php",
+			"digest": "sha256:f09045ea8afb016f608d229dfa6731b3c0646ba7ff2f5f3627dcee07294de6cd"
+		},
+		{
+			"type": "backend-template",
+			"src": "templates/janitor/profile/orders/invoice.php",
+			"dest": "templates/janitor/profile/orders/invoice.php",
+			"digest": "sha256:590c150f038c4a64e8149a265a2bce08a8f95a90a5fc8ed2355000d82133c994"
+		},
+		{
+			"type": "backend-template",
+			"src": "templates/janitor/profile/orders/list.php",
+			"dest": "templates/janitor/profile/orders/list.php",
+			"digest": "sha256:4ac066783ce6009e5cb19620eedf2959c9d9705896f79ca0a8986a7ba8655d2a"
+		},
+		{
+			"type": "backend-template",
+			"src": "templates/janitor/profile/orders/view.php",
+			"dest": "templates/janitor/profile/orders/view.php",
+			"digest": "sha256:4954519c142b13e35a5aa58ac3829fc829444a30af4d6aa3747ebb1b53148639"
+		},
+		{
+			"type": "backend-template",
+			"src": "templates/janitor/shop/cart/edit.php",
+			"dest": "templates/janitor/shop/cart/edit.php",
+			"digest": "sha256:e10474149d9ee20386a36ddb2dafeb1815318faab865f39370cf1257e06397a9"
+		},
+		{
+			"type": "backend-template",
+			"src": "templates/janitor/shop/cart/list.php",
+			"dest": "templates/janitor/shop/cart/list.php",
+			"digest": "sha256:c06bfa9d2c8dd786352023bc988552ec3a8a23ac3aaa6d5878c0b9e0538777e2"
+		},
+		{
+			"type": "backend-template",
+			"src": "templates/janitor/shop/cart/new.php",
+			"dest": "templates/janitor/shop/cart/new.php",
+			"digest": "sha256:93328b318d0229ab43a04d5aa68c7a791fa2534bfa2d9a0ba0efad0aa9670fdd"
+		},
+		{
+			"type": "backend-template",
+			"src": "templates/janitor/shop/item/new.php",
+			"dest": "templates/janitor/shop/item/new.php",
+			"digest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+		},
+		{
+			"type": "backend-template",
+			"src": "templates/janitor/shop/order/creditnote.php",
+			"dest": "templates/janitor/shop/order/creditnote.php",
+			"digest": "sha256:0fa6aebdabba7aff67f5eef440b683ef85c2f7a6d1e6769001515664a82b8a44"
+		},
+		{
+			"type": "backend-template",
+			"src": "templates/janitor/shop/order/edit.php",
+			"dest": "templates/janitor/shop/order/edit.php",
+			"digest": "sha256:316dd1f7b9eff3ff2403f9d0b1a7e4bfc2f33a23749a9c9ceec668700930f90e"
+		},
+		{
+			"type": "backend-template",
+			"src": "templates/janitor/shop/order/invoice-payment-info.php",
+			"dest": "templates/janitor/shop/order/invoice-payment-info.php",
+			"digest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+		},
+		{
+			"type": "backend-template",
+			"src": "templates/janitor/shop/order/invoice-seller.php",
+			"dest": "templates/janitor/shop/order/invoice-seller.php",
+			"digest": "sha256:d901a45a2fd156130e4a093462484dc8c0273229eab26cfe35b1cca923656b9c"
+		},
+		{
+			"type": "backend-template",
+			"src": "templates/janitor/shop/order/invoice.php",
+			"dest": "templates/janitor/shop/order/invoice.php",
+			"digest": "sha256:be007c35711478c4109147e5cce779ec70ca1bced5282179e335a00584aa0798"
+		},
+		{
+			"type": "backend-template",
+			"src": "templates/janitor/shop/order/list.php",
+			"dest": "templates/janitor/shop/order/list.php",
+			"digest": "sha256:5c099a478a4d4352b2d493c758e922abfa0ed07984b6bc00369fbe2ffb2f4726"
+		},
+		{
+			"type": "backend-template",
+			"src": "templates/janitor/shop/order/payment/new.php",
+			"dest": "templates/janitor/shop/order/payment/new.php",
+			"digest": "sha256:7705c1e184e2460581d219d74a9d989e5647152b5b223c6236ae8947645e655a"
+		},
+		{
+			"type": "backend-template",
+			"src": "templates/janitor/shop/payment/list.php",
+			"dest": "templates/janitor/shop/payment/list.php",
+			"digest": "sha256:09c0e6a233c5e898eecd94c8169b3cc22ebe1e2df9eb6a9bc1e31976ebb61fbf"
+		},
+		{
+			"type": "controller",
+			"src": "www/shop.js",
+			"dest": "www/shop.js",
+			"digest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+		},
+		{
+			"type": "template",
+			"src": "templates/shop/address.php",
+			"dest": "templates/shop/address.php",
+			"digest": "sha256:d27bf4cd9da86c4a8abab195bb02b473c37bd3e81484afb5ca3012d179491b9c"
+		},
+		{
+			"type": "template",
+			"src": "templates/shop/cart.php",
+			"dest": "templates/shop/cart.php",
+			"digest": "sha256:95a3e2fe390359d7a891ed75fde3a0e5922d21e76904285eb61079bcdacc3050"
+		},
+		{
+			"type": "template",
+			"src": "templates/shop/checkout.php",
+			"dest": "templates/shop/checkout.php",
+			"digest": "sha256:7e82edb4f90c4d36be427dd067fe4469d514cce6092ec4dde021099fa307e0a4"
+		},
+		{
+			"type": "template",
+			"src": "templates/shop/payment-options.php",
+			"dest": "templates/shop/payment-options.php",
+			"digest": "sha256:f8754bf9d9656b25ea5a2183ae1066843ec2dbb7d69b6d5c6ce4a65064140b79"
+		},
+		{
+			"type": "template",
+			"src": "templates/shop/payment.php",
+			"dest": "templates/shop/payment.php",
+			"digest": "sha256:2cc0fa0bfa3a862bcbe8d2d1542166cea7a3fc91bdf25726ae6605f318ab0213"
+		},
+		{
+			"type": "template",
+			"src": "templates/shop/payments.php",
+			"dest": "templates/shop/payments.php",
+			"digest": "sha256:37d54dd400a7d82d52659fded8034d3e73846154514d4f0d475f44b59e0607f1"
+		},
+		{
+			"type": "template",
+			"src": "templates/shop/profile.php",
+			"dest": "templates/shop/profile.php",
+			"digest": "sha256:cbd190c7232ed04c1177d43e9639534f747990c0136b0aff792e0c2adb623b17"
+		},
+		{
+			"type": "template",
+			"src": "templates/shop/verify.php",
+			"dest": "templates/shop/verify.php",
+			"digest": "sha256:eee238d7a704587f433b5daacfb912d5acbdad37e5063500ec7dd10533ec004c"
+		},
+		{
+			"type": "template",
+			"src": "templates/shop/receipt/error.php",
+			"dest": "templates/shop/receipt/error.php",
+			"digest": "sha256:759b6ede4e98f9241edfcdf4be10174fa45d397c7529e484fb52674e3a501d95"
+		},
+		{
+			"type": "template",
+			"src": "templates/shop/receipt/new-order.php",
+			"dest": "templates/shop/receipt/new-order.php",
+			"digest": "sha256:704adc6a865da9921c929a85f4b9e8dcda885dedd7247b1fb152bed847a1e414"
+		},
+		{
+			"type": "template",
+			"src": "templates/shop/receipt/order.php",
+			"dest": "templates/shop/receipt/order.php",
+			"digest": "sha256:229ae821c91023d94442df62f7afc576376d85580d70a1079fffe1909b4b9946"
+		},
+		{
+			"type": "template",
+			"src": "templates/shop/receipt/orders.php",
+			"dest": "templates/shop/receipt/orders.php",
+			"digest": "sha256:fb4ff2f4fef3c51d523f02773390bccd5bd82e006ca6356aa9cb24f270ccdb04"
+		},
+		{
+			"type": "asset",
+			"src": "www/img/shop/gx_creditcards.png",
+			"dest": "www/img/shop/gx_creditcards.png",
+			"digest": "sha256:c3d9d557c575ccba2bfcd61cd233effb21295f4fc3d4895be7eba24e54595d23"
+		},
+		{
+			"type": "asset",
+			"src": "www/img/shop/gx_refresh.svg",
+			"dest": "www/img/shop/gx_refresh.svg",
+			"digest": "sha256:427fcb05fb34aa3e874ec185453147e85194afe79860e579ec01f1643b4b72cf"
+		},
+		{
+			"type": "asset",
+			"src": "www/img/shop/gx_trash_white.svg",
+			"dest": "www/img/shop/gx_trash_white.svg",
+			"digest": "sha256:e1a644fcd1562580fdbeabeac19afe7ebb81c57e88c5f3e5b75c507f7c73bf28"
+		}
+	],
+	"composer": [
+		{
+			"json": {
+				"require": {
+					"stripe/stripe-php": "^20.3.1"
+				}
+			},
+			"dest": "includes/payment/stripe"
+		}
+	]
+}
