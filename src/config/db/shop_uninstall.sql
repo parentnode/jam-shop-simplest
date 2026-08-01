@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS `SITE_DB`.`shop_cancelled_orders`,`SITE_DB`.`shop_cart_items`,`SITE_DB`.`shop_carts`,`SITE_DB`.`shop_order_items`,`SITE_DB`.`shop_orders`,`SITE_DB`.`shop_payments`;

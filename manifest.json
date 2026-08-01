@@ -240,6 +240,41 @@
 			"src": "www/img/shop/gx_trash_white.svg",
 			"dest": "www/img/shop/gx_trash_white.svg",
 			"digest": "sha256:e1a644fcd1562580fdbeabeac19afe7ebb81c57e88c5f3e5b75c507f7c73bf28"
+		},
+		{
+			"type": "data-model",
+			"src": "config/db/user_gateway_stripe_order_intent.sql",
+			"digest": "sha256:537f83f423da1aaf8edad3309ec7e039b9767d81bfe5957ae2c0ebc774e065c4"
+		},
+		{
+			"type": "data-model",
+			"src": "config/db/shop_cancelled_orders.sql",
+			"digest": "sha256:5f1dc9ea78c749fea2a286db15e82d60b7da02161e092f516f3c1c2358472857"
+		},
+		{
+			"type": "data-model",
+			"src": "config/db/shop_cart_items.sql",
+			"digest": "sha256:6e64fa53b263f75615f9b178f7f08ab341eafa62b7886f826ff86a47cc908458"
+		},
+		{
+			"type": "data-model",
+			"src": "config/db/shop_carts.sql",
+			"digest": "sha256:24ca70fe18709b199df78961361d3e380e65706ae1ef3f1365dce427d8f72062"
+		},
+		{
+			"type": "data-model",
+			"src": "config/db/shop_orders.sql",
+			"digest": "sha256:9092f4422fc52e1b6150fd53cb6c99f1a576da984de355c98167bc0348bbf728"
+		},
+		{
+			"type": "data-model",
+			"src": "config/db/shop_payments.sql",
+			"digest": "sha256:0df3c6aced41083ff4db7a2f82cdddcf7c79dbec47f2ba5e328e08d0ee23681c"
+		},
+		{
+			"type": "data-uninstall-all",
+			"src": "config/db/shop_uninstall.sql",
+			"digest": "sha256:a55a5f18dc107181be57b49a3049d3972d346c48bec321148a97abcd8cdd2fb8"
 		}
 	],
 	"composer": [
