@@ -41,7 +41,7 @@
 			"type": "settings-template",
 			"src": "templates/settings/index.php",
 			"dest": "templates/janitor/modules/shop/simplest/index.php",
-			"digest": "sha256:7955b25fa3baf4e6ff52668e1f059ae7b69a34a9af01732f5c1c81b2d3bde927"
+			"digest": "sha256:0029073a3755700facc336765fd2bce9612dd02c84720c3189c227be2a0f6288"
 		},
 		{
 			"type": "backend-controller",
@@ -93,9 +93,9 @@
 		},
 		{
 			"type": "backend-template",
-			"src": "templates/janitor/shop/item/new.php",
-			"dest": "templates/janitor/shop/item/new.php",
-			"digest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+			"src": "templates/janitor/shop/cart/item/new.php",
+			"dest": "templates/janitor/shop/cart/item/new.php",
+			"digest": "sha256:b4d1a951900e206f5e74e70aae7b0edae14ea7f99aad77ec0266521251812e94"
 		},
 		{
 			"type": "backend-template",
@@ -147,9 +147,9 @@
 		},
 		{
 			"type": "controller",
-			"src": "www/shop.js",
-			"dest": "www/shop.js",
-			"digest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+			"src": "www/shop.php",
+			"dest": "www/shop.php",
+			"digest": "sha256:91b9d00b8d5f6c392be6c3263d03dc7d034be23f8faa355c1bd5ca51dd6eb297"
 		},
 		{
 			"type": "template",
@@ -243,8 +243,13 @@
 		},
 		{
 			"type": "data-model",
-			"src": "config/db/user_gateway_stripe_order_intent.sql",
-			"digest": "sha256:537f83f423da1aaf8edad3309ec7e039b9767d81bfe5957ae2c0ebc774e065c4"
+			"src": "config/db/shop_orders.sql",
+			"digest": "sha256:9092f4422fc52e1b6150fd53cb6c99f1a576da984de355c98167bc0348bbf728"
+		},
+		{
+			"type": "data-model",
+			"src": "config/db/shop_order_items.sql",
+			"digest": "sha256:e552290f80123d1fe49ee651c8a255b003a6e7a0278fb55b3b45cefd8292abc6"
 		},
 		{
 			"type": "data-model",
@@ -253,18 +258,13 @@
 		},
 		{
 			"type": "data-model",
-			"src": "config/db/shop_cart_items.sql",
-			"digest": "sha256:6e64fa53b263f75615f9b178f7f08ab341eafa62b7886f826ff86a47cc908458"
-		},
-		{
-			"type": "data-model",
 			"src": "config/db/shop_carts.sql",
 			"digest": "sha256:24ca70fe18709b199df78961361d3e380e65706ae1ef3f1365dce427d8f72062"
 		},
 		{
 			"type": "data-model",
-			"src": "config/db/shop_orders.sql",
-			"digest": "sha256:9092f4422fc52e1b6150fd53cb6c99f1a576da984de355c98167bc0348bbf728"
+			"src": "config/db/shop_cart_items.sql",
+			"digest": "sha256:6e64fa53b263f75615f9b178f7f08ab341eafa62b7886f826ff86a47cc908458"
 		},
 		{
 			"type": "data-model",
