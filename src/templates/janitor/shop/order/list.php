@@ -80,7 +80,7 @@ session()->value("return_to_orderstatus", $status);
 			<? foreach($orders["range_orders"] as $order):
 				$total_order_price = $model->getTotalOrderPrice($order["id"]);
 				if($status !== "all" && $status < 2) {
-					$payment_intent = payments()->canBeCaptured([
+					$payment_intent = payment()->canBeCaptured([
 						"user_id" => $order["user_id"],
 						"order_id" => $order["id"],
 						"amount" => $total_order_price["price"],

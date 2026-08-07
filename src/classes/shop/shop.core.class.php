@@ -2415,7 +2415,7 @@ class ShopCore extends Model {
 			$custom_text = translate("For the payment of {AMOUNT} to ". SITE_NAME.".", ["AMOUNT" => formatPrice($amount)]);
 
 			// Use payment gateway for further preparation
-			return payments()->createCartPaymentSession($cart, $success_url, $cancel_url, [
+			return payment()->createCartPaymentSession($cart, $success_url, $cancel_url, [
 				"custom_text" => $custom_text
 			]);
 
@@ -2438,7 +2438,7 @@ class ShopCore extends Model {
 			$custom_text = translate("For the payment of {AMOUNT} for order {ORDER_NO}.", ["AMOUNT" => formatPrice($amount), "ORDER_NO" => $order["order_no"]]);
 
 			// Use payment gateway for further preparation
-			return payments()->createOrderPaymentSession($order, $success_url, $cancel_url, [
+			return payment()->createOrderPaymentSession($order, $success_url, $cancel_url, [
 				"custom_text" => $custom_text
 			]);
 
@@ -2475,7 +2475,7 @@ class ShopCore extends Model {
 			$custom_text = translate("For the payment of {AMOUNT} for the following orders: {ORDER_IDS}.", ["AMOUNT" => formatPrice($orders_price), "ORDER_IDS" => $order_list]);
 
 			// Use payment gateway for further preparation
-			return payments()->createOrdersPaymentSession($orders, $success_url, $cancel_url, [
+			return payment()->createOrdersPaymentSession($orders, $success_url, $cancel_url, [
 				"custom_text" => $custom_text
 			]);
 

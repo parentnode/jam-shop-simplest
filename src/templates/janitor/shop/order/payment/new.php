@@ -35,7 +35,7 @@ $payment_methods = $this->paymentMethods();
 
 // $user_payment_methods = $UC->getPaymentMethods(["user_id" => $order["user_id"], "extend" => true]);
 
-$payment_intent = payments()->canBeCaptured(["user_id" => $order["user_id"], "order_id" => $order["id"], "amount" => $payment_amount]);
+$payment_intent = payment()->canBeCaptured(["user_id" => $order["user_id"], "order_id" => $order["id"], "amount" => $payment_amount]);
 if(!$payment_intent) {
 	$user_payment_methods = $UC->getPaymentMethods(["user_id" => $order["user_id"], "extend" => true]);
 }

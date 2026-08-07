@@ -66,7 +66,7 @@ if($action) {
 		if(count($action) == 4 && $action[2] == "success") {
 
 
-			$result = payments()->processPaymentSession($action);
+			$result = payment()->processPaymentSession($action);
 
 			debug(["result", $result]);
 			exit();
@@ -79,7 +79,7 @@ if($action) {
 				//
 				// $payment_intent_id = getVar("payment_intent");
 				//
-				// $id_result = payments()->identifyPaymentIntent($result["payment_intent_id"]);
+				// $id_result = payment()->identifyPaymentIntent($result["payment_intent_id"]);
 				// debug([$id_result]);
 				// exit();
 				//
@@ -93,7 +93,7 @@ if($action) {
 				// 		if($order) {
 				//
 				// 			// get payment intent
-				// 			$registration_result = payments()->registerPaymentIntent($payment_intent_id, $order);
+				// 			$registration_result = payment()->registerPaymentIntent($payment_intent_id, $order);
 				// 			if($registration_result["status"] === "success") {
 				//
 				// 				// redirect to leave POST state
@@ -190,7 +190,7 @@ if($action) {
 
 			$payment_intent_id = getVar("payment_intent");
 
-			$id_result = payments()->identifyPaymentIntent($payment_intent_id);
+			$id_result = payment()->identifyPaymentIntent($payment_intent_id);
 
 			if($id_result && $id_result["status"] === "success") {
 
@@ -202,7 +202,7 @@ if($action) {
 					if($order) {
 
 						// get payment intent
-						$registration_result = payments()->registerPaymentIntent($payment_intent_id, $order);
+						$registration_result = payment()->registerPaymentIntent($payment_intent_id, $order);
 						if($registration_result["status"] === "success") {
 
 							// redirect to leave POST state
@@ -244,7 +244,7 @@ if($action) {
 
 			$payment_intent_id = getVar("payment_intent");
 
-			$id_result = payments()->identifyPaymentIntent($payment_intent_id);
+			$id_result = payment()->identifyPaymentIntent($payment_intent_id);
 			if($id_result && $id_result["status"] === "success") {
 
 				// Single order
@@ -254,13 +254,13 @@ if($action) {
 					if($order) {
 
 						// Register intent for order (and subscription)
-						$intent_registration_result = payments()->updatePaymentIntent($payment_intent_id, $order);
+						$intent_registration_result = payment()->updatePaymentIntent($payment_intent_id, $order);
 						if($intent_registration_result["status"] === "success") {
 
 							// Register payment for order (if paid)
 							if($id_result["payment_status"] === "succeeded") {
 
-								$payment_registration_result = payments()->registerPayment($order, $id_result["payment_intent"]);
+								$payment_registration_result = payment()->registerPayment($order, $id_result["payment_intent"]);
 
 								// Clear messages
 								message()->resetMessages();
@@ -298,7 +298,7 @@ if($action) {
 
 						}
 
-						$payments_registration_result = payments()->registerPayments($orders, $id_result["payment_intent"]);
+						$payments_registration_result = payment()->registerPayments($orders, $id_result["payment_intent"]);
 
 
 						// Clear messages
@@ -445,7 +445,7 @@ if($action) {
 			if($payment_method_result["status"] === "PROCEED_TO_INTENT") {
 
 				$return_url = str_replace("{GATEWAY}", $payment_method_result["payment_gateway"], SITE_PAYMENT_REGISTER_INTENT);
-				$result = payments()->requestPaymentIntentForCart(
+				$result = payment()->requestPaymentIntentForCart(
 					$payment_method_result["cart"], 
 					$payment_method_result["gateway_payment_method_id"], 
 					$return_url
@@ -562,7 +562,7 @@ if($action) {
 			if($payment_method_result["status"] === "PROCEED_TO_INTENT") {
 
 				$return_url = str_replace("{GATEWAY}", $payment_method_result["payment_gateway"], SITE_PAYMENT_REGISTER_PAID_INTENT);
-				$result = payments()->requestPaymentIntentForOrder(
+				$result = payment()->requestPaymentIntentForOrder(
 					$payment_method_result["order"], 
 					$payment_method_result["gateway_payment_method_id"], 
 					$return_url
@@ -672,7 +672,7 @@ if($action) {
 			if($payment_method_result["status"] === "PROCEED_TO_INTENT") {
 
 				$return_url = str_replace("{GATEWAY}", $payment_method_result["payment_gateway"], SITE_PAYMENT_REGISTER_PAID_INTENT);
-				$result = payments()->requestPaymentIntentForOrders(
+				$result = payment()->requestPaymentIntentForOrders(
 					$payment_method_result["orders"], 
 					$payment_method_result["gateway_payment_method_id"], 
 					$return_url

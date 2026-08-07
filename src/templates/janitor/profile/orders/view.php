@@ -32,7 +32,7 @@ if($order) {
 
 	$payment_intent = false;
 	if($payable_amount && $order["payment_status"] < 2 && $order["status"] != 3) {
-		$payment_intent = payments()->canBeCaptured(["user_id" => $user_id, "order_id" => $order["id"], "amount" => $payable_amount["price"]]);
+		$payment_intent = payment()->canBeCaptured(["user_id" => $user_id, "order_id" => $order["id"], "amount" => $payable_amount["price"]]);
 	}
 
 }

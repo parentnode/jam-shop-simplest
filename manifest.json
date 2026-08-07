@@ -11,7 +11,7 @@
 			"type": "class",
 			"src": "classes/shop/shop.core.class.php",
 			"dest": "classes/shop/shop.core.class.php",
-			"digest": "sha256:e69988385b185688653357a2426da55cef57974c1e4977dee02a80c6bd34c0e9"
+			"digest": "sha256:2351cb7b70b8a09745d93178f08357d2b43fc58eb9c744cb571c5f6a567948ef"
 		},
 		{
 			"type": "class",
@@ -23,7 +23,7 @@
 			"type": "class",
 			"src": "classes/shop/supershop.core.class.php",
 			"dest": "classes/shop/supershop.core.class.php",
-			"digest": "sha256:bf46b9bb3b168d4926ffb6766823d809b1cd49a4db7a2a7116b83126d99b305f"
+			"digest": "sha256:add5dbb47e2fb06a2b85297e4093ff3394645826111ba45aa1d5fe1fd2a18e45"
 		},
 		{
 			"type": "settings-css",
@@ -71,7 +71,7 @@
 			"type": "backend-template",
 			"src": "templates/janitor/profile/orders/view.php",
 			"dest": "templates/janitor/profile/orders/view.php",
-			"digest": "sha256:4954519c142b13e35a5aa58ac3829fc829444a30af4d6aa3747ebb1b53148639"
+			"digest": "sha256:ea43a13e42103491a27966a49b16d588e17a20e92d943e7a35fb3e5aa7627793"
 		},
 		{
 			"type": "backend-template",
@@ -131,13 +131,13 @@
 			"type": "backend-template",
 			"src": "templates/janitor/shop/order/list.php",
 			"dest": "templates/janitor/shop/order/list.php",
-			"digest": "sha256:5c099a478a4d4352b2d493c758e922abfa0ed07984b6bc00369fbe2ffb2f4726"
+			"digest": "sha256:5430eb272a811b3d9dcc73cc407a5268baf86ac199aed0b209e690f12a516c9b"
 		},
 		{
 			"type": "backend-template",
 			"src": "templates/janitor/shop/order/payment/new.php",
 			"dest": "templates/janitor/shop/order/payment/new.php",
-			"digest": "sha256:7705c1e184e2460581d219d74a9d989e5647152b5b223c6236ae8947645e655a"
+			"digest": "sha256:94969e388550e014f22dcf5b95c7d757769b4662b0e6aa234c52f6dc28666a88"
 		},
 		{
 			"type": "backend-template",
@@ -149,7 +149,7 @@
 			"type": "controller",
 			"src": "www/shop.php",
 			"dest": "www/shop.php",
-			"digest": "sha256:91b9d00b8d5f6c392be6c3263d03dc7d034be23f8faa355c1bd5ca51dd6eb297"
+			"digest": "sha256:effec11cc14012d50c3cd5253193ab8e6e1c444fd85b6a0fecf03bc8ca86d929"
 		},
 		{
 			"type": "template",

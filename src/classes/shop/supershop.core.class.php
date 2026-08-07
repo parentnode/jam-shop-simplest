@@ -3031,7 +3031,7 @@ class SuperShopCore extends Shop {
 			$payment_amount = $this->getProperty("payment_amount", "value");
 			$payment_intent_id = $this->getProperty("payment_intent_id", "value");
 
-			$result = payments()->capturePayment($payment_intent_id, $payment_amount);
+			$result = payment()->capturePayment($payment_intent_id, $payment_amount);
 			if($result && $result["status"] === "success") {
 				message()->resetMessages();
 				return $result["order"];
@@ -3058,7 +3058,7 @@ class SuperShopCore extends Shop {
 			$order_id = $this->getProperty("order_id", "value");
 			$gateway_payment_method_id = getPost("gateway_payment_method_id");
 
-			$result = payments()->capturePaymentWithoutIntent($order_id, $gateway_payment_method_id);
+			$result = payment()->capturePaymentWithoutIntent($order_id, $gateway_payment_method_id);
 			if($result && $result["status"] === "success") {
 				message()->resetMessages();
 				return $result["order"];
