@@ -206,7 +206,10 @@ else {
 	<div class="emptycart">
 		<h2>Your cart is empty</h2>
 <?
-		$product_controller = module()->getMainControllerPath("product");
+		$product_controller = module()->getMainControllerPath("productcollection");
+		if(!$product_controller) {
+			$product_controller = module()->getMainControllerPath("product");
+		}
 		if($product_controller): ?>
 		<p>Check out our <a href="<?= $product_controller ?>">products</a>.</p>
 <?			endif; ?>
@@ -341,7 +344,10 @@ else {
 		<p>
 			You don't have any items in your cart yet.
 <?
-			$product_controller = module()->getMainControllerPath("product");
+			$product_controller = module()->getMainControllerPath("productcollection");
+			if(!$product_controller) {
+				$product_controller = module()->getMainControllerPath("product");
+			}
 			if($product_controller): ?>
 			<br />Check out our <a href="<?= $product_controller ?>">products</a> now.
 <?			endif; ?>

@@ -1,5 +1,5 @@
 {
-	"version": "0.1",
+	"version": "0.1.1",
 	"files": [
 		{
 			"type": "class",
@@ -161,13 +161,13 @@
 			"type": "template",
 			"src": "templates/shop/cart.php",
 			"dest": "templates/shop/cart.php",
-			"digest": "sha256:95a3e2fe390359d7a891ed75fde3a0e5922d21e76904285eb61079bcdacc3050"
+			"digest": "sha256:f2f2554153c4169e1d7ecb3f1b1b4dd20a27ce356bbe3fa4a9c86ae7954f94a6"
 		},
 		{
 			"type": "template",
 			"src": "templates/shop/checkout.php",
 			"dest": "templates/shop/checkout.php",
-			"digest": "sha256:7e82edb4f90c4d36be427dd067fe4469d514cce6092ec4dde021099fa307e0a4"
+			"digest": "sha256:f41715b3d5e1e5d2bc7756bfdec544755219c3b18dcfb34b43abbad32b6d8174"
 		},
 		{
 			"type": "template",
