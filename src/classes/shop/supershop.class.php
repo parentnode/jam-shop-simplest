@@ -14,7 +14,7 @@ class SuperShop extends SuperShopCore {
 	*/
 	function __construct() {
 
-		parent::__construct(get_class());
+		parent::__construct(get_class($this));
 
 	}
 
